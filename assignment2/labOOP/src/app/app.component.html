@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="app.component.css">
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="display">
+          <div class="display1">{{expression}}</div>
+          <div class="display2">{{b}}</div>
+        </div>
+        <div class="all-buttons">
+          <div class="button operation" (click)="percent()">%</div>
+          <div class="button operation" (click)="clearAll()">CE</div>
+          <div class="button operation" (click)="clearAll()">C</div>
+          <div class="button operation" (click)="delete()">del</div>
+          <div class="button operation" (click)="oneOver()">1/x</div>
+          <div class="button operation" (click)="square()">x²</div>
+          <div class="button operation" (click)="root()">²√x</div>
+          <div class="button operation" (click)="addOperator('÷')">÷</div>
+          <div class="button" (click)="addNum('7')">7</div>
+          <div class="button" (click)="addNum('8')">8</div>
+          <div class="button" (click)="addNum('9')">9</div>
+          <div class="button operation" (click)="addOperator('x')">x</div>
+          <div class="button" (click)="addNum('4')">4</div>
+          <div class="button" (click)="addNum('5')">5</div>
+          <div class="button" (click)="addNum('6')">6</div>
+          <div class="button operation" (click)="addOperator('-')">-</div>
+          <div class="button" (click)="addNum('1')">1</div>
+          <div class="button" (click)="addNum('2')">2</div>
+          <div class="button" (click)="addNum('3')">3</div>
+          <div class="button operation" (click)="addOperator('+')">+</div>
+          <div class="button" (click)="minus()">+/-</div>
+          <div class="button" (click)="addNum('0')">0</div>
+          <div class="button" (click)="dot()">.</div>
+          <div class="button equal" (click)="displayAns()">=</div>
+        </div>
+      </div>
+    </section>
+    <script src="./main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat';
+}
+section{
+    background-color: rgb(201, 183, 211);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: rgb(201, 183, 211);
+    border:15px solid black;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.display{
+    background-color: rgb(160, 100, 179);
+    border-bottom:15px solid black;
+    width: 100%;
+    height: 100px;
+    text-align: right;
+    padding: 20px;
+}
+.display1{
+    font-size: 20px;
+    height: 20px;
+    text-align: right;
+    overflow: hidden;
+}
+.display2{
+    font-size: 30px;
+    text-align: left;
+    overflow: hidden;
+}
+.all-buttons{
+    color: rgb(246, 242, 247);
+    display: grid;
+    grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+    grid-gap: 5px;
+    border:5px solid rgb(201, 183, 211);;
+}
+.button{
+    background-color: rgb(160, 100, 179);
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+.button:active{
+    background-color: rgb(243, 120, 192);
+}
+.operation{
+    background-color: rgba(55, 11, 83, 0.829);
+}
+.equal{
+    background-color: rgb(121, 14, 14);
+}
